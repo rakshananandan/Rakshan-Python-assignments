@@ -1,0 +1,2 @@
+filename=input("enter the file name: ")
+print ("the extension of the file is  : python")
