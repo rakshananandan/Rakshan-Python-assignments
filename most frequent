@@ -1,0 +1,23 @@
+def most_frequent(input_string):
+    
+    char_freq = {}
+
+    
+    for char in input_string:
+        
+        if char != ' ':
+            
+            char_freq[char] = char_freq.get(char, 0) + 1
+
+   
+    sorted_freq = sorted(char_freq.items(), key=lambda x: x[1], reverse=True)
+
+    
+    for char, freq in sorted_freq:
+        print(f"{char} = {freq:02d}", end=" ")
+
+
+input_string = input("Please enter a string: ")
+
+
+most_frequent(input_string)
